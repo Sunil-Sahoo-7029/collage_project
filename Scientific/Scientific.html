@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCIENTIFIC</title>
+    <link rel="stylesheet" href="Scientific.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <p id="hadder">Calculator</p>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/Standard/Standard.html" target="_self">Standard</a>
+      <a href="Scientific.html" target="_self">Scientific</a>
+      <a href="/number system/number-system-converter.html" target="_self">Number System</a>
+      <a href="/Age/Age.html">Age</a>
+      <a href="/Length/Length_Converter.html">Length</a>
+    </div>
+    <span style="font-size:27px;cursor:pointer;margin-left:20px" onclick="openNav()" id="font">&#9776; Scientific Calculator</span>
+
+
+
+    <div class="container">
+      <div class="calculator dark">
+        <div class="theme-toggler active">
+          <i class="toggler-icon"></i>
+        </div>
+        <div class="display-screen">
+          <p style="color: rgb(197, 117, 13);position: relative;top:30px;left:90px;font-size:25px;font-family: 'Times New Roman', Times, serif;">Scientific Calculator</p>
+          <div id="display"></div>
+        </div>
+        <div class="buttons">
+            <form name="calcul">
+          <table>
+            <tr>
+              <td colspan="4"><input type="text" name="result" placeholder="0" style="text-align: right"/></td>
+            </tr>
+            <tr>
+              <td><button class="btn-operator" type="button" value="sin" onclick="sin()">sin</button></td>           
+              <td><button class="btn-operator" type="button" value="cos" onclick="cos()">cos</button></td>
+              <td><button class="btn-operator" type="button" value="tan" onclick="tan()">tan</button></td>
+              <td colspan="2"><button class="btn-operator" id="backspace" type="button" value="C" class="clear" onclick="remv()">C</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn-operator" type="button" value="x^2" onclick="square()"> x<sup>2 </button> </td>
+              <td><button class="btn-operator" type="button" value="x^3" onclick="cubed()"> x<sup>3 </button> </td>
+              <td><button class="btn-operator" type="button" value="sqrt2" onclick="sqrt2()"> &radic; </button> </td>
+              <td><button class="btn-operator" type="button" value="sqrt3" onclick="sqrt3()"> &#8731; </button> </td>
+            </tr>
+            <tr>
+              <td><button class="btn-number" type="button" value="1" onclick="number(value)"> 1 </button> </td>
+              <td><button class="btn-number" type="button" value="2" onclick="number(value)"> 2 </button> </td>
+              <td><button class="btn-number" type="button" value="3" onclick="number(value)"> 3 </button> </td>
+		      <td><button class="btn-operator" type="button" value="BACKSPC" onclick="BACKSPC()"> <i class="material-icons" style="font-size:20px">backspace</i> </button> </td>
+            </tr>
+            <tr>
+              <td><button class="btn-number" type="button" value="4" onclick="number(value)"> 4</button> </td>
+		      <td><button class="btn-number" type="button" value="5" onclick="number(value)"> 5 </button> </td>
+		      <td><button class="btn-number" type="button" value="6" onclick="number(value)"> 6 </button> </td>
+		      <td><button class="btn-operator" type="button" value="-" onclick="number(value)"> - </button> </td>
+            </tr>
+            <tr>
+              <td><button class="btn-number" type="button" value="7" onclick="number(value)"> 7 </button> </td>
+		      <td><button class="btn-number" type="button" value="8" onclick="number(value)"> 8 </button> </td>
+		      <td><button class="btn-number" type="button" value="9" onclick="number(value)"> 9 </button> </td>
+		      <td><button class="btn-operator"  type="button" value="/" onclick="number(value)"> / </button> </td>
+            </tr>
+            <tr>
+              <td><button class="btn-operator" type="button" value="." onclick="number(value)"> . </button> </td>
+		      <td><button class="btn-number" type="button" value="0" onclick="number(value)"> 0 </button> </td>
+		      <td><button class="btn-operator" type="button" value="*" onclick="number(value)"> * </button> </td>
+		      <td><button class="btn-operator" type="button" value="%" onclick="number(value)"> % </button> </td>
+            </tr>
+            <tr>
+              <td colspan="2"> <button type="button" value="=" onclick="equal()" class="equal">=</button> </td>
+		      <td colspan="2"><button  type="button" value="+" onclick="number(value)" class="plass"> + </button> </td>
+            </tr>
+          </table>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="Scientific.js"></script>
+  </body>
+</html>

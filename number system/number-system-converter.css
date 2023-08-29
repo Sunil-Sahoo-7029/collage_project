@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Menu bars */
+
+
+#font{
+  color: rgb(8, 8, 8);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+#hadder{
+  font-size: 20px;
+  color: white;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #282727;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#font{
+  position: relative;
+  right: 540px;
+  bottom: 60px;
+
+}
+ /* End Menu Bars */
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: linear-gradient(
+    214deg,
+    #00dbde 14%,
+    #fc00ff 46%,
+    #00ffa5 86%
+  );
+  /* background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg); */
+  min-height: 100vh;
+}
+
+main {
+  background-image: linear-gradient(
+    180deg,
+    #e6bc18,
+    #176c1e,
+    rgb(154, 101, 40)
+  );
+  /* background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg); */
+
+  padding: 120px 100px;
+  border-radius: 10px;
+}
+
+#select-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+select {
+  margin: 10px 20px;
+  padding: 7px 15px;
+  outline: none;
+}
+
+input {
+  background-color: #fff;
+  min-width: 350px;
+  margin: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.5s;
+}
+
+input:focus {
+  box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#convert-button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s transform;
+}
+
+#convert-button:active {
+  transform: scale(0.9);
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#error {
+  display: none;
+  color: #f00;
+  font-size: small;
+  margin: 0 0 10px 30px;
+  text-align: start;
+}
+
+#written-by-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 5px;
+}
+
+#written-by-container a {
+  color: #000;
+}
